@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PengenalanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('tugas1', [PengenalanController::class,'tugas1'])->nama('tugas1');
+
+route::get('tugas2', [PengenalanController::class,'tugas2'])->name('tugas2');
